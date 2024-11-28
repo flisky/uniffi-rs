@@ -7,6 +7,10 @@ pub struct Guid(pub String);
 pub struct Ouid(pub String);
 uniffi::custom_newtype!(Ouid, String);
 
+// Ditto, using a proc-macro, but not used here.
+pub struct Ouid2(pub String);
+uniffi::custom_newtype!(Ouid2, String);
+
 // This error is represented in the UDL.
 #[derive(Debug, thiserror::Error)]
 pub enum GuidError {

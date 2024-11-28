@@ -1,0 +1,23 @@
+[package]
+name = "uniffi-fixture-ext-types-custom-types2"
+edition = "2021"
+version = "0.22.0"
+license = "MPL-2.0"
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+name = "ext_types_custom2"
+
+[dependencies]
+custom-types = { path = "../custom-types", package = "uniffi-fixture-ext-types-custom-types" }
+uniffi = { workspace = true }
+
+[build-dependencies]
+uniffi = { workspace = true, features = ["build"] }
+
+[dev-dependencies]
+uniffi = { workspace = true, features = ["bindgen-tests"] }
+
+[features]
+ffi-trace = ["uniffi/ffi-trace"]

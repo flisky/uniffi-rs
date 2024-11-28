@@ -1797,6 +1797,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "uniffi-fixture-ext-types-custom-types2"
+version = "0.22.0"
+dependencies = [
+ "uniffi",
+ "uniffi-fixture-ext-types-custom-types",
+]
+
+[[package]]
 name = "uniffi-fixture-ext-types-external-crate"
 version = "0.22.0"
 
